@@ -1,0 +1,27 @@
+GET http://localhost:5184/users
+
+###
+POST  http://localhost:5184/users
+Content-Type: application/json
+
+{
+    "Id": 2,
+  "name": "Moe Roslin",
+  "email": "max@gmail.com"
+}
+
+###
+GET http://localhost:5184/users/2
+
+###
+PUT  http://localhost:5184/users/2
+Content-Type: application/json
+
+{
+    "Id": 2,
+  "name": "Moe Roslin",
+  "email": "m@mmm.com"
+}
+
+###
+DELETE http://localhost:5184/users/2
