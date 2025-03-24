@@ -39,20 +39,25 @@ If the token is missing or invalid, the API returns:
 {
   "error": "Unauthorized"
 }
+```
+---
 
 🧾 Example POST Request Body
+```
 {
   "name": "Alice",
   "email": "alice@example.com"
 }
+```
 
 ❌ Validation Errors
 If user input is invalid (e.g., missing name or invalid email), the API returns:
-
+```
 [
   "Name is required.",
   "Invalid email format."
 ]
+```
 
 📂 File Structure
 UserManagementAPI/
@@ -62,7 +67,9 @@ UserManagementAPI/
 
 
 🧪 How to Run
+```
 dotnet run
+```
 
 👤 Author
 Created by Max
